@@ -1,0 +1,122 @@
+.body {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+}
+
+.change {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.change-pass {
+    width: 50%;
+    border-top: 3px solid orange;
+}
+
+.change-profile {
+    width: 50%;
+    border-top: 3px solid rgb(15, 146, 74);
+}
+
+.change > .title {
+    font-size: 20px;
+    font-weight: 0;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.change > .form {
+    padding: 10px 15px;
+}
+
+.change > .form > .form-group {
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+}
+
+.change > .form > .form-group > label {
+    font-size: 16px;
+}
+
+.change > .form > .form-group > input {
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.change > .form > .form-group > input[type="number"]::-webkit-inner-spin-button,
+.change > .form > .form-group > input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.change-profile > .form > .form-group > button {
+    width: 100%;
+    border: 1px solid rgb(15, 146, 74);
+    color:rgb(15, 146, 74);
+    background-color: rgb(15, 146, 74, 0.11);
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.change-profile > .form > .form-group > button:hover {
+    background-color: rgb(15, 146, 74, 0.2);
+}
+
+.change-pass > .form > .form-group > button {
+    border: 1px solid rgb(255, 166, 0);
+    color: rgb(255, 166, 0);
+    background-color: rgb(255, 166, 0, 0.11);
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.change-pass > .form > .form-group > button:hover {
+    background-color: rgb(255, 166, 0, 0.2);
+}
+
+@media screen and (max-width: 850px) {
+    .body {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .body {
+        margin-left: 0;
+        flex-flow: column-reverse nowrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .change {
+        width: 100%;
+    }
+
+    .change-pass {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .change-profile {
+        width: 100%;
+    }
+}

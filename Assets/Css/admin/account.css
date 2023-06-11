@@ -1,0 +1,153 @@
+.create-account {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.create-account > .title {
+    font-size: 20px;
+    font-weight: 0;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.create-account > .title > button.register {
+    background-color: rgb(37, 170, 97);
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.create-account > .title > button.register:hover {
+    background-color: rgb(93, 209, 145);
+}
+
+.create-account > .title > button.cancel {
+    background-color: rgb(230, 65, 36);
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.create-account > .title > button.cancel:hover {
+    background-color: rgb(250, 125, 103);
+}
+
+.create-account > .form {
+    padding: 0 15px;
+    overflow: hidden;
+    height: 0;
+}
+
+@keyframes showForm {
+    from {
+        height: 0;
+    }
+    to {
+        height: 500px;
+    }
+}
+
+@keyframes hideForm {
+    from {
+        height: 500px;
+    }
+    to {
+        height: 0;
+    }
+}
+
+.create-account > .form > .form-group {
+    margin-top: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+}
+
+.create-account > .form > .form-group > label {
+    font-size: 16px;
+}
+
+.create-account > .form > .form-group > input {
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.create-account > .form > .form-group > input[type="number"]::-webkit-inner-spin-button,
+.create-account > .form > .form-group > input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.create-account > .form > .form-group > button {
+    width: 100%;
+    border: 1px solid rgb(15, 146, 74);
+    color:rgb(15, 146, 74);
+    background-color: rgb(15, 146, 74, 0.11);
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.create-account > .form > .form-group > button:hover {
+    background-color: rgb(15, 146, 74, 0.2);
+}
+
+.list {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+}
+
+#table-list-account_filter > label > input {
+    border: 1px solid #ccc;
+    padding: 5px;
+    outline: 0;
+    width: 200px;
+}
+
+select[name="table-list-account_length"] {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    outline: 0;
+}
+
+#table-list-account button.btn-delete {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(247, 49, 14);
+    background-color: rgb(247, 49, 14);
+    color: white;
+    cursor: pointer;
+    outline: 0;
+}
+
+#table-list-account button.btn-delete:hover {
+    background-color: rgb(247, 49, 14, 0.6);
+}

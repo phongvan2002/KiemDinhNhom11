@@ -1,0 +1,174 @@
+.container {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+}
+
+.container > .search {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.select2-search__field {
+    outline: 0;
+}
+
+.select2-container--default .select2-selection--single {
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.container > .search > .col > .form-group {
+    display: flex;
+    flex-flow: column;
+}
+
+.container > .search > .col > .form-group > input {
+    padding: 5px 10px;
+    width: 150px;
+    border: 1px solid #ccc;
+    outline: 0;
+}
+
+.container > .search > .col > .form-group > button {
+    padding: 5px 10px;
+    width: 100px;
+    border: 1px solid #ccc;
+    outline: 0;
+    cursor: pointer;
+    background-color: #eee;
+}
+
+.container > .search > .col > .form-group > button:hover {
+    background-color: #ddd;
+}
+
+.container > .search > .col > .form-group > .station {
+    padding: 1px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    outline: 0;
+    cursor: pointer;
+}
+
+.container > .result {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.container > .result  span.distance::after {
+    content: 'm';
+}
+
+.container > .result .btn-go {
+    padding: 5px 24px;
+    width: 100px;
+    border: 1px solid rgb(62, 182, 37);
+    outline: 0;
+    cursor: pointer;
+    background-color: rgb(62, 182, 37);
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.container > .result .btn-go:hover {
+    background-color: rgb(50, 150, 27);
+}
+
+.container > .result > .mapouter {
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.container > .result > .mapouter .gmap_canvas {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container > .result > .mapouter iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.container > .result > .row > .list-img {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.container > .result > .row > .list-img > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.zoom-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    max-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.zoom-image > .show-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zoom-image > .show-image > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.zoom-image > .show-image > .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    display: flex;
+    gap: 0;
+}
+
+.zoom-image > .show-image > .btn > ion-icon {
+    font-size: 24px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+}
+
+.zoom-image > .show-image > .btn > ion-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,26 @@
+.contact {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+
+.contact > ul {
+    margin-left: 20px;
+}
+
+.contact > ul > li {
+    font-size: 18px;
+}
+
+.contact > ul > li > label {
+    font-weight: bold;
+}
+
+.contact > ul > li > a {
+    text-decoration: none;
+    color: blue;
+}

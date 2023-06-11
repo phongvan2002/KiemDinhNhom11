@@ -1,0 +1,594 @@
+.create-route {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.create-route>.title {
+    font-size: 20px;
+    font-weight: 0;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.create-route>.title>.btn>button.create {
+    background-color: rgb(37, 170, 97);
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.create-route>.title>.btn>button.create:hover {
+    background-color: rgb(93, 209, 145);
+}
+
+.create-route>.title>.btn>button.cancel {
+    background-color: rgb(230, 65, 36);
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.create-route>.title>.btn>button.cancel:hover {
+    background-color: rgb(250, 125, 103);
+}
+
+.create-route>.form {
+    padding: 0 15px;
+    overflow: hidden;
+    height: 0;
+}
+
+.create-route>.title>.btn {
+    display: flex;
+    gap: 10px;
+}
+
+.create-route>.title>.btn>button.import {
+    background-color: rgb(240, 153, 24);
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.create-route>.title>.btn>button.import:hover {
+    background-color: rgba(240, 154, 24, 0.767);
+}
+
+@keyframes showForm {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 828px;
+    }
+}
+
+@keyframes hideForm {
+    from {
+        height: 828px;
+    }
+
+    to {
+        height: 0;
+    }
+}
+
+.create-route>.form>.form-group {
+    margin-top: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+}
+
+.create-route>.form>.form-group>label {
+    font-size: 16px;
+}
+
+.create-route>.form>.form-group>input,
+.create-route>.form>.form-group>textarea {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 78px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.create-route>.form>.form-group>input[type="number"]::-webkit-inner-spin-button,
+.create-route>.form>.form-group>input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.create-route>.form>.form-group>button {
+    width: 100%;
+    border: 1px solid rgb(15, 146, 74);
+    color: rgb(15, 146, 74);
+    background-color: rgb(15, 146, 74, 0.11);
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.create-route>.form>.form-group>button:hover {
+    background-color: rgb(15, 146, 74, 0.2);
+}
+
+.import-excel {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 30px;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    display: none;
+}
+
+.import-excel>input {
+    display: none;
+}
+
+.import-excel>.select-file {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #ccc;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #888;
+    max-width: 300px;
+}
+
+.import-excel>.file-name {
+    width: 100%;
+    background-color: rgb(206, 245, 245);
+    padding: 15px;
+    font-size: 18px;
+    color: #666;
+    border-radius: 5px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.import-excel>.btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.import-excel>.btn>button.cancel-upload {
+    background-color: rgb(230, 65, 36);
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.import-excel>.btn>button.cancel-upload:hover {
+    background-color: rgb(250, 125, 103);
+}
+
+.import-excel>.btn>button.upload {
+    background-color: rgb(37, 170, 97);
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.import-excel>.btn>button.upload:hover {
+    background-color: rgb(93, 209, 145);
+}
+
+.import-excel>.uploading-process {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-flow: column;
+    display: none;
+}
+
+.import-excel>.uploading-process>.number-line {
+    text-align: center;
+    font-size: 16px;
+}
+
+.import-excel>.uploading-process>.number-line::before {
+    content: 'Số lượng: ';
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+
+.import-excel>.uploading-process>.show-ratio {
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(102, 238, 124);
+    overflow: hidden;
+}
+
+.import-excel>.uploading-process>.show-ratio>.ratio {
+    font-size: 16px;
+    z-index: 1;
+}
+
+.import-excel>.uploading-process>.show-ratio>.ratio::after {
+    content: '%';
+}
+
+.import-excel>.uploading-process>.show-ratio>.line {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 0 25px 25px 0;
+}
+
+.import-excel>.uploading-process>textarea {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    outline: 0;
+    min-height: 100px;
+    padding: 10px;
+}
+
+.list-route {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+    margin: 20px 0;
+}
+
+.list-route>.filter {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.list-route>.filter>.choose {
+    width: calc(100% - 100px);
+}
+
+.select2-search__field {
+    outline: 0;
+}
+
+.select2-container--default .select2-selection--single {
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.list-route>.filter>.btn>.update-station {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(15, 146, 74);
+    background-color: rgb(15, 146, 74);
+    color: white;
+    cursor: pointer;
+    outline: 0;
+}
+
+.list-route>.filter>.btn>.update-station:hover {
+    background-color: rgb(15, 146, 74, 0.6);
+}
+
+.list-route>.filter>.btn>.cancel-station {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(247, 49, 14);
+    background-color: rgb(247, 49, 14);
+    color: white;
+    cursor: pointer;
+    outline: 0;
+}
+
+.list-route>.filter>.btn>.cancel-station:hover {
+    background-color: rgb(247, 49, 14, 0.6);
+}
+
+.list-route>.update-box {
+    width: 100%;
+    overflow: hidden;
+    /* height: 226px; */
+    height: 0px;
+    transition: height 0.5s;
+}
+
+.list-route>.update-box>.form {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    padding: 20px 10px;
+    border: 1px solid #ccc;
+}
+
+.list-route>.update-box>.form>.form-group {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+}
+
+.list-route>.update-box>.form>.form-group>label {
+    font-weight: bold;
+}
+
+.list-route>.update-box>.form>.form-group>input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    outline: 0;
+}
+
+.list-route>.update-box>.form>.form-group>button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(15, 146, 74);
+    background-color: rgb(15, 146, 74);
+    color: white;
+    cursor: pointer;
+    outline: 0;
+    margin-top: 20px;
+}
+
+.list-route>.update-box>.form>.form-group>button:hover {
+    background-color: rgb(15, 146, 74, 0.6);
+}
+
+#table-route_filter > label > input {
+    border: 1px solid #ccc;
+    padding: 5px;
+    outline: 0;
+    width: 200px;
+}
+
+select[name="table-route_length"] {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    outline: 0;
+}
+
+#table-route button#btn-delete-route {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(247, 49, 14);
+    background-color: rgb(247, 49, 14);
+    color: white;
+    cursor: pointer;
+    outline: 0;
+}
+
+#table-route .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+#table-route button#btn-delete-route:hover {
+    background-color: rgb(247, 49, 14, 0.6);
+}
+
+#table-route button#btn-update-route {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(15, 146, 74);
+    background-color: rgb(15, 146, 74);
+    color: white;
+    cursor: pointer;
+    outline: 0;
+}
+
+#table-route button#btn-update-route:hover {
+    background-color: rgb(15, 146, 74, 0.6);
+}
+
+#table-route .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.modal-edit-route {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: rgba(102, 102, 102, 0.253);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal-edit-route > .container {
+    width: 90%;
+    max-width: 700px;
+    padding: 0 20px;
+    background-color: #fff;
+}
+
+.modal-edit-route > .container > .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.modal-edit-route > .container > .title > span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+
+.modal-edit-route > .container > .title > .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.modal-edit-route > .container > .title > .btn > .cancel-edit-route {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(247, 49, 14);
+    background-color: rgb(247, 49, 14);
+    color: white;
+    cursor: pointer;
+    outline: 0;
+}
+
+.modal-edit-route > .container > .title > .btn > .cancel-edit-route:hover {
+    background-color: rgb(247, 49, 14, 0.6);
+}
+
+.modal-edit-route > .container > .title > .btn > .update-edit-route {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(15, 146, 74);
+    background-color: rgb(15, 146, 74);
+    color: white;
+    cursor: pointer;
+    outline: 0;
+}
+
+.modal-edit-route > .container > .title > .btn > .update-edit-route:hover {
+    background-color: rgb(15, 146, 74, 0.6);
+}
+
+.modal-edit-route > .container > .form {
+    padding: 20px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    overflow: auto;
+    max-height: 70vh;
+}
+
+.modal-edit-route > .container > .form > .form-group {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 5px;
+}
+
+.modal-edit-route > .container > .form > .form-group > label {
+    font-size: 16px;
+    color: #666;
+}
+
+.modal-edit-route > .container > .form > .form-group > input,
+.modal-edit-route > .container > .form > .form-group > textarea {
+    border: 1px solid #ccc;
+    padding: 5px;
+    outline: 0;
+    width: 100%;
+}
+
+.modal-edit-route > .container > .form > .form-group > textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 100px;
+    min-height: 100px;
+}
+
+.modal-edit-route > .container > .form > .form-group > input[type="file"] {
+    display: none;
+}
+
+.modal-edit-route > .container > .form > .form-group > .multi-image-small {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+.modal-edit-route > .container > .form > .form-group > .multi-image-small > .new-image-small {
+  width: 70px;
+  height: 70px;
+  border: 1px dotted #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.modal-edit-route > .container > .form > .form-group > .multi-image-small > img {
+  width: 68px;
+  height: 68px;
+  object-fit: cover;
+  padding: 1px;
+  border: 1px dotted #ddd;
+}
