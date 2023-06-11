@@ -1,0 +1,1440 @@
+{
+  "id": "b43690bf-0288-4df2-a760-401084857dc5",
+  "version": "2.0",
+  "name": "qltd_test",
+  "url": "https://localhost/webqltd/",
+  "tests": [{
+    "id": "b7c03b2a-f7cc-41d9-a301-76df595421a3",
+    "name": "login_test",
+    "commands": [{
+      "id": "b30b5967-34a3-42ce-bbaf-286403900d24",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost/webqltd/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0c46fcf-7277-4537-9d80-1a0ae1139ff8",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45a5cd41-4f78-4e47-85f0-364ebb122eb9",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "06ee6107-1582-4ff8-8290-1753a0c226cd",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6301ff0b-1316-45af-87e2-2fbcb198a1c4",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "50665b93-b73c-4ee5-80f5-a7cd8613e802",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-login",
+      "targets": [
+        ["id=btn-login", "id"],
+        ["css=#btn-login", "css:finder"],
+        ["xpath=//button[@id='btn-login']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Đăng nhập')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "515174d6-c079-48f4-8e8c-238a0cf681ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal-button",
+      "targets": [
+        ["css=.swal-button", "css:finder"],
+        ["xpath=//div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9365f19b-ffb4-4a0c-9114-a90eb2bcfeec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.showSideBar > .md",
+      "targets": [
+        ["css=.showSideBar > .md", "css:finder"],
+        ["xpath=//ion-icon[@name='menu-outline']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ion-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "14b5110e-aa5b-4977-ad6d-f4840050c777",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(5) > span",
+      "targets": [
+        ["css=a:nth-child(5) > span", "css:finder"],
+        ["xpath=//a[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Đăng xuất')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3bea86fe-e730-4ab1-b3ca-06680eb67df5",
+    "name": "addroute_test",
+    "commands": [{
+      "id": "a4c091c7-f0d9-45cd-a07a-c6133de499e6",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost/webqltd/admin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9ade154-b085-4a40-918f-d15783418b75",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "784x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35a2fe21-c306-4bb7-9585-6b0b94ec1b2a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.create",
+      "targets": [
+        ["css=.create", "css:finder"],
+        ["xpath=//div[2]/div/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff8b92b0-de2c-480d-bb4f-33fb673890d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=start-point",
+      "targets": [
+        ["id=start-point", "id"],
+        ["css=#start-point", "css:finder"],
+        ["xpath=//input[@id='start-point']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "454e85bf-eb4b-4e0c-adda-03dff2ffbaa4",
+      "comment": "",
+      "command": "type",
+      "target": "id=start-point",
+      "targets": [
+        ["id=start-point", "id"],
+        ["css=#start-point", "css:finder"],
+        ["xpath=//input[@id='start-point']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Hà Nội"
+    }, {
+      "id": "2b9ba981-711a-4153-9eb1-b3755ae3bccc",
+      "comment": "",
+      "command": "click",
+      "target": "id=end-point",
+      "targets": [
+        ["id=end-point", "id"],
+        ["css=#end-point", "css:finder"],
+        ["xpath=//input[@id='end-point']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "224d2fec-4234-4245-838d-7fc82b1e3796",
+      "comment": "",
+      "command": "type",
+      "target": "id=end-point",
+      "targets": [
+        ["id=end-point", "id"],
+        ["css=#end-point", "css:finder"],
+        ["xpath=//input[@id='end-point']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Núi Một"
+    }, {
+      "id": "20ae0f11-13f3-49c0-a0d6-323c4a9b871c",
+      "comment": "",
+      "command": "click",
+      "target": "id=column",
+      "targets": [
+        ["id=column", "id"],
+        ["css=#column", "css:finder"],
+        ["xpath=//input[@id='column']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad9fbe2a-015d-444f-9adb-698946e4b768",
+      "comment": "",
+      "command": "type",
+      "target": "id=column",
+      "targets": [
+        ["id=column", "id"],
+        ["css=#column", "css:finder"],
+        ["xpath=//input[@id='column']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "0b29dc04-32a9-4ec6-b301-6e1afaa65288",
+      "comment": "",
+      "command": "click",
+      "target": "id=purpose",
+      "targets": [
+        ["id=purpose", "id"],
+        ["css=#purpose", "css:finder"],
+        ["xpath=//input[@id='purpose']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "268685cd-bb8e-404c-8fc7-807e47bb0755",
+      "comment": "",
+      "command": "type",
+      "target": "id=purpose",
+      "targets": [
+        ["id=purpose", "id"],
+        ["css=#purpose", "css:finder"],
+        ["xpath=//input[@id='purpose']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Néo cuối"
+    }, {
+      "id": "212765c6-9296-47b9-ae3e-2f58e55ff8ef",
+      "comment": "",
+      "command": "click",
+      "target": "id=type",
+      "targets": [
+        ["id=type", "id"],
+        ["css=#type", "css:finder"],
+        ["xpath=//input[@id='type']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e35f61e1-f2d5-4c84-ba26-4d2a38615aba",
+      "comment": "",
+      "command": "type",
+      "target": "id=type",
+      "targets": [
+        ["id=type", "id"],
+        ["css=#type", "css:finder"],
+        ["xpath=//input[@id='type']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "N121-33C"
+    }, {
+      "id": "65a81bd5-229d-4c9b-b931-7f03e5f5e198",
+      "comment": "",
+      "command": "click",
+      "target": "id=topographic",
+      "targets": [
+        ["id=topographic", "id"],
+        ["css=#topographic", "css:finder"],
+        ["xpath=//input[@id='topographic']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbbd40c2-5820-4f33-96e0-d05b94b35e4c",
+      "comment": "",
+      "command": "type",
+      "target": "id=topographic",
+      "targets": [
+        ["id=topographic", "id"],
+        ["css=#topographic", "css:finder"],
+        ["xpath=//input[@id='topographic']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "Đồi"
+    }, {
+      "id": "07f7311d-72ea-4c22-9f89-c282c89a1368",
+      "comment": "",
+      "command": "click",
+      "target": "id=distance",
+      "targets": [
+        ["id=distance", "id"],
+        ["css=#distance", "css:finder"],
+        ["xpath=//input[@id='distance']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49c41387-f9ec-4e01-8c65-1e8835b5c44d",
+      "comment": "",
+      "command": "type",
+      "target": "id=distance",
+      "targets": [
+        ["id=distance", "id"],
+        ["css=#distance", "css:finder"],
+        ["xpath=//input[@id='distance']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "de4e0a44-3239-4133-8a80-a57013f17cf4",
+      "comment": "",
+      "command": "click",
+      "target": "id=latitude",
+      "targets": [
+        ["id=latitude", "id"],
+        ["css=#latitude", "css:finder"],
+        ["xpath=//input[@id='latitude']", "xpath:attributes"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1491d5d1-6fdf-4a9b-b590-0fdb2a8bf03f",
+      "comment": "",
+      "command": "type",
+      "target": "id=latitude",
+      "targets": [
+        ["id=latitude", "id"],
+        ["css=#latitude", "css:finder"],
+        ["xpath=//input[@id='latitude']", "xpath:attributes"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": "19.94595313"
+    }, {
+      "id": "faf547a5-e4f2-45be-83da-3f5e8fcff7f9",
+      "comment": "",
+      "command": "click",
+      "target": "id=longitude",
+      "targets": [
+        ["id=longitude", "id"],
+        ["css=#longitude", "css:finder"],
+        ["xpath=//input[@id='longitude']", "xpath:attributes"],
+        ["xpath=//div[9]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70712fc6-b60c-44e7-868c-00f3903022ec",
+      "comment": "",
+      "command": "type",
+      "target": "id=longitude",
+      "targets": [
+        ["id=longitude", "id"],
+        ["css=#longitude", "css:finder"],
+        ["xpath=//input[@id='longitude']", "xpath:attributes"],
+        ["xpath=//div[9]/input", "xpath:position"]
+      ],
+      "value": "105.8085898"
+    }, {
+      "id": "e0ea8bd6-29e9-471b-8a04-b21bc4ae15bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=note",
+      "targets": [
+        ["id=note", "id"],
+        ["css=#note", "css:finder"],
+        ["xpath=//textarea[@id='note']", "xpath:attributes"],
+        ["xpath=//div[10]/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63c27bff-87ac-4edd-9d07-5ae6510c0962",
+      "comment": "",
+      "command": "type",
+      "target": "id=note",
+      "targets": [
+        ["id=note", "id"],
+        ["css=#note", "css:finder"],
+        ["xpath=//textarea[@id='note']", "xpath:attributes"],
+        ["xpath=//div[10]/textarea", "xpath:position"]
+      ],
+      "value": "Không có"
+    }, {
+      "id": "1778bb7e-fb25-4632-a936-70e85c91042b",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-create-route",
+      "targets": [
+        ["id=btn-create-route", "id"],
+        ["css=#btn-create-route", "css:finder"],
+        ["xpath=//button[@id='btn-create-route']", "xpath:attributes"],
+        ["xpath=//div[11]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Thêm tuyến đường')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3d8a2603-276e-40d5-a04d-3c8d9101d82e",
+    "name": "updateroute_test",
+    "commands": [{
+      "id": "9ec81810-1533-473e-aa64-cf0c03461f98",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost/webqltd/admin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d583daf2-8a73-4171-970a-77000ec3ea1e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "788x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a628acec-1c9c-4f7e-a2d2-8580e7a93f11",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-update-route",
+      "targets": [
+        ["id=btn-update-route", "id"],
+        ["css=#btn-update-route", "css:finder"],
+        ["xpath=//button[@id='btn-update-route']", "xpath:attributes"],
+        ["xpath=//table[@id='table-route']/tbody/tr/td[7]/div/button", "xpath:idRelative"],
+        ["xpath=//td[7]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1e76705-e46e-4a46-99c1-fa4c795a6345",
+      "comment": "",
+      "command": "type",
+      "target": "id=start-point-edit",
+      "targets": [],
+      "value": "Hậu Lộc"
+    }, {
+      "id": "90f708cc-b4bb-4ba2-a427-6082d7e9a8b5",
+      "comment": "",
+      "command": "type",
+      "target": "id=end-point-edit",
+      "targets": [],
+      "value": "Hà Nội"
+    }, {
+      "id": "1259ebf4-3e14-403c-9a0c-cf621141a41e",
+      "comment": "",
+      "command": "type",
+      "target": "id=column-edit",
+      "targets": [],
+      "value": "18"
+    }, {
+      "id": "de0ff030-dc32-4b18-8c49-3f2adc182032",
+      "comment": "",
+      "command": "type",
+      "target": "id=purpose-edit",
+      "targets": [],
+      "value": "Đỡ thẳng"
+    }, {
+      "id": "65376d37-f75f-4beb-86ab-2187a8d4afb7",
+      "comment": "",
+      "command": "type",
+      "target": "id=type-edit",
+      "targets": [],
+      "value": "Đ121-31C"
+    }, {
+      "id": "f4285ac0-588c-48c2-af5b-58ac152e5ef4",
+      "comment": "",
+      "command": "type",
+      "target": "id=topographic-edit",
+      "targets": [],
+      "value": "ruộng"
+    }, {
+      "id": "e4bd1c98-3ec0-4eb8-be8c-083b67613b1e",
+      "comment": "",
+      "command": "type",
+      "target": "id=distance-edit",
+      "targets": [],
+      "value": "100"
+    }, {
+      "id": "d14ffbdf-76f3-4b89-a1d1-26bd96611427",
+      "comment": "",
+      "command": "type",
+      "target": "id=latitude-edit",
+      "targets": [],
+      "value": "19,91291034"
+    }, {
+      "id": "3851de75-cac2-4fb9-b140-e5ebd4af93c4",
+      "comment": "",
+      "command": "click",
+      "target": "id=longitude-edit",
+      "targets": [
+        ["id=longitude-edit", "id"],
+        ["css=#longitude-edit", "css:finder"],
+        ["xpath=//input[@id='longitude-edit']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div[2]/div[9]/input", "xpath:position"]
+      ],
+      "value": "105,7992986"
+    }, {
+      "id": "b02b2b99-f608-477c-aa73-62f497e31993",
+      "comment": "",
+      "command": "click",
+      "target": "id=note-edit",
+      "targets": [
+        ["id=note-edit", "id"],
+        ["css=#note-edit", "css:finder"],
+        ["xpath=//textarea[@id='note-edit']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div[2]/div[10]/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "762953fd-f73b-483b-b4a9-2991828a6114",
+      "comment": "",
+      "command": "type",
+      "target": "id=note-edit",
+      "targets": [
+        ["id=note-edit", "id"],
+        ["css=#note-edit", "css:finder"],
+        ["xpath=//textarea[@id='note-edit']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div[2]/div[10]/textarea", "xpath:position"]
+      ],
+      "value": "Không có"
+    }, {
+      "id": "605c706b-53b2-4c9d-b97e-30207a0ed38b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.update-edit-route",
+      "targets": [
+        ["css=.update-edit-route", "css:finder"],
+        ["xpath=//div[4]/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "01f1e073-bfcd-4025-b735-24d16634a9ed",
+    "name": "adduser_test",
+    "commands": [{
+      "id": "c5de8fe0-c239-411e-8479-544c8dcac16b",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost/webqltd/admin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e70c8283-fda2-4770-955c-9a66f42747ba",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "938x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0f9fd04-7f59-490b-ac41-dd7fa0e23164",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu > a:nth-child(2) > span",
+      "targets": [
+        ["css=.menu > a:nth-child(2) > span", "css:finder"],
+        ["xpath=//a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Quản lý tài khoản')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b397ac8-186b-4d19-a00b-972721138d38",
+      "comment": "",
+      "command": "click",
+      "target": "css=.register",
+      "targets": [
+        ["css=.register", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Đăng ký')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7050ae57-efd5-4eb9-ad3a-0aa861615b38",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b21716a-e8e3-4c96-8df1-ec8e02b3708e",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "phong"
+    }, {
+      "id": "a8ab8ef7-0fdf-454b-a356-49180b93f8c3",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51c74427-1e24-4ddf-a26f-82f0f16e178b",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "24d54056-5cf1-4b8c-80db-7a6952107743",
+      "comment": "",
+      "command": "click",
+      "target": "id=repassword",
+      "targets": [
+        ["id=repassword", "id"],
+        ["css=#repassword", "css:finder"],
+        ["xpath=//input[@id='repassword']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "090631c4-fd30-429a-8c23-ec62ddc077a6",
+      "comment": "",
+      "command": "type",
+      "target": "id=repassword",
+      "targets": [
+        ["id=repassword", "id"],
+        ["css=#repassword", "css:finder"],
+        ["xpath=//input[@id='repassword']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "1a4ec4ad-08f0-441b-8711-f674d74ad2ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ede6d39a-3248-4b40-b46f-eb9982be398c",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Phong Văn"
+    }, {
+      "id": "08b812ba-4a71-4584-abe2-83bf10817b2e",
+      "comment": "",
+      "command": "click",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["css=#phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d7ae951-4e79-4f8d-83ea-c85a3a538f8a",
+      "comment": "",
+      "command": "type",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["css=#phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "0123456778"
+    }, {
+      "id": "754cd3e1-c37c-433f-bc8c-dcaed456a36e",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3877718-d0b5-4dc9-9ade-bdcf85c32890",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "phong@gmail.com"
+    }, {
+      "id": "a6d8fd26-45c8-487c-bac3-6c7041024f61",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-register-account",
+      "targets": [
+        ["id=btn-register-account", "id"],
+        ["css=#btn-register-account", "css:finder"],
+        ["xpath=//button[@id='btn-register-account']", "xpath:attributes"],
+        ["xpath=//div[7]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3a0edbd-33c8-4f32-9606-f8e15613121b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal-overlay",
+      "targets": [
+        ["css=.swal-overlay", "css:finder"],
+        ["xpath=//body/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8ab0f00f-f92f-40ba-9b7b-cbf9a954bb16",
+    "name": "changeinfo_test",
+    "commands": [{
+      "id": "a11d8ecc-9be2-49c8-872e-da7f30aeb666",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost/webqltd/profile",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d561ab7c-48c9-499d-9193-2ed3589bd907",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "784x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c05f5b3e-f846-445c-9f85-094f657e7d58",
+      "comment": "",
+      "command": "click",
+      "target": "id=old_pass",
+      "targets": [
+        ["id=old_pass", "id"],
+        ["name=old_pass", "name"],
+        ["css=#old_pass", "css:finder"],
+        ["xpath=//input[@id='old_pass']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f49fd0b-a2f2-4102-9f38-852c68f9422a",
+      "comment": "",
+      "command": "type",
+      "target": "id=old_pass",
+      "targets": [
+        ["id=old_pass", "id"],
+        ["name=old_pass", "name"],
+        ["css=#old_pass", "css:finder"],
+        ["xpath=//input[@id='old_pass']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "e75d502e-54ac-4055-9a8e-03c7a1bb8ac6",
+      "comment": "",
+      "command": "click",
+      "target": "id=new_pass",
+      "targets": [
+        ["id=new_pass", "id"],
+        ["name=new_pass", "name"],
+        ["css=#new_pass", "css:finder"],
+        ["xpath=//input[@id='new_pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a29c593-8e43-491b-a9e8-0a7ebc706f17",
+      "comment": "",
+      "command": "type",
+      "target": "id=new_pass",
+      "targets": [
+        ["id=new_pass", "id"],
+        ["name=new_pass", "name"],
+        ["css=#new_pass", "css:finder"],
+        ["xpath=//input[@id='new_pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "68dc6467-f31e-4527-bcbd-b38d8c20c6ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirm_pass",
+      "targets": [
+        ["id=confirm_pass", "id"],
+        ["name=confirm_pass", "name"],
+        ["css=#confirm_pass", "css:finder"],
+        ["xpath=//input[@id='confirm_pass']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "afd03a3e-b7c2-48d3-9574-1045d92b5ab8",
+      "comment": "",
+      "command": "type",
+      "target": "id=confirm_pass",
+      "targets": [
+        ["id=confirm_pass", "id"],
+        ["name=confirm_pass", "name"],
+        ["css=#confirm_pass", "css:finder"],
+        ["xpath=//input[@id='confirm_pass']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "288117fe-4be6-4d8c-b663-fc488f488e38",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-change-pass",
+      "targets": [
+        ["id=btn-change-pass", "id"],
+        ["css=#btn-change-pass", "css:finder"],
+        ["xpath=//button[@id='btn-change-pass']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Thay đổi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb2f9a10-56d5-4f30-a27f-aa81fceaafea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal-button",
+      "targets": [
+        ["css=.swal-button", "css:finder"],
+        ["xpath=//div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "49ca43c5-8e1f-4b4a-820b-e2f5c9161f28",
+    "name": "reportproblem_test",
+    "commands": [{
+      "id": "fe317c58-15f3-4e63-aa6c-d2fcc2351274",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost/webqltd/report",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e225c9f3-8bda-40e6-8166-9b409c63a6b8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "784x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63539fd4-f7fb-4646-9fa5-942f7335a311",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-show-modal-report",
+      "targets": [
+        ["id=btn-show-modal-report", "id"],
+        ["css=#btn-show-modal-report", "css:finder"],
+        ["xpath=//button[@id='btn-show-modal-report']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Báo cáo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "732033a1-4898-4337-a3c7-701bd5b8ed3b",
+      "comment": "",
+      "command": "click",
+      "target": "id=content-report",
+      "targets": [
+        ["id=content-report", "id"],
+        ["name=report", "name"],
+        ["css=#content-report", "css:finder"],
+        ["xpath=//textarea[@id='content-report']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3ee3843-f223-4de3-999a-0fd0b7f31e66",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=content-report",
+      "targets": [
+        ["id=content-report", "id"],
+        ["name=report", "name"],
+        ["css=#content-report", "css:finder"],
+        ["xpath=//textarea[@id='content-report']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcb6cdf5-0131-4200-bfbd-c7aad2731ccb",
+      "comment": "",
+      "command": "type",
+      "target": "id=content-report",
+      "targets": [
+        ["id=content-report", "id"],
+        ["name=report", "name"],
+        ["css=#content-report", "css:finder"],
+        ["xpath=//textarea[@id='content-report']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "sai kỹ thuật"
+    }, {
+      "id": "516634d8-1623-4de2-89d4-b80dd6dd0d2c",
+      "comment": "",
+      "command": "click",
+      "target": "id=note-report",
+      "targets": [
+        ["id=note-report", "id"],
+        ["name=note", "name"],
+        ["css=#note-report", "css:finder"],
+        ["xpath=//textarea[@id='note-report']", "xpath:attributes"],
+        ["xpath=//div[2]/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd43ecdf-af66-48ad-ab45-45ccbb44243c",
+      "comment": "",
+      "command": "type",
+      "target": "id=note-report",
+      "targets": [
+        ["id=note-report", "id"],
+        ["name=note", "name"],
+        ["css=#note-report", "css:finder"],
+        ["xpath=//textarea[@id='note-report']", "xpath:attributes"],
+        ["xpath=//div[2]/textarea", "xpath:position"]
+      ],
+      "value": "sửa lại"
+    }, {
+      "id": "c77455ac-7612-4884-9d39-8f373f2acdfa",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-report",
+      "targets": [
+        ["id=btn-report", "id"],
+        ["css=#btn-report", "css:finder"],
+        ["xpath=//button[@id='btn-report']", "xpath:attributes"],
+        ["xpath=//div[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d8e9171-8c19-451b-b09e-c89464843738",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal-button",
+      "targets": [
+        ["css=.swal-button", "css:finder"],
+        ["xpath=//div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a888ac6c-61bd-4cdc-be35-d959b191f12d",
+    "name": "locateproblem_test",
+    "commands": [{
+      "id": "a0fe3836-3922-45ba-b4b0-05fa4c58e87a",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost/webqltd/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5328b2a8-3430-473d-8344-971a16cd9af3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "788x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c5c755e-9655-4471-acde-152a30c1e5bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=select2-list-route-container",
+      "targets": [
+        ["id=select2-list-route-container", "id"],
+        ["css=#select2-list-route-container", "css:finder"],
+        ["xpath=//span[@id='select2-list-route-container']", "xpath:attributes"],
+        ["xpath=//span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b89f904c-fdf1-448b-afcd-cd1e27d68d36",
+      "comment": "",
+      "command": "click",
+      "target": "css=.select2-container--open b",
+      "targets": [
+        ["css=.select2-container--open b", "css:finder"],
+        ["xpath=//div[2]/div/span/span/span/span[2]/b", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d5e3f2c-c7e0-415e-b46a-c561b1e8ac7d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.select2-container--focus b",
+      "targets": [
+        ["css=.select2-container--focus b", "css:finder"],
+        ["xpath=//div[2]/div/span/span/span/span[2]/b", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9810f474-05a9-4d4c-abc3-6988b88ea946",
+      "comment": "",
+      "command": "click",
+      "target": "id=select2-list-route-container",
+      "targets": [
+        ["id=select2-list-route-container", "id"],
+        ["css=#select2-list-route-container", "css:finder"],
+        ["xpath=//span[@id='select2-list-route-container']", "xpath:attributes"],
+        ["xpath=//span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63170f18-711b-4d9d-8ca5-47f4d5c8e30e",
+      "comment": "",
+      "command": "click",
+      "target": "id=distance",
+      "targets": [
+        ["id=distance", "id"],
+        ["css=#distance", "css:finder"],
+        ["xpath=//input[@id='distance']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d950bc36-b514-4fba-bc00-a57ebab2d96f",
+      "comment": "",
+      "command": "type",
+      "target": "id=distance",
+      "targets": [
+        ["id=distance", "id"],
+        ["css=#distance", "css:finder"],
+        ["xpath=//input[@id='distance']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "157e5767-6aa7-44cf-9afc-2de9fe9e70b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=distance",
+      "targets": [
+        ["id=distance", "id"],
+        ["css=#distance", "css:finder"],
+        ["xpath=//input[@id='distance']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9760f7b-e8af-4207-bab2-9a4aa311afe1",
+      "comment": "",
+      "command": "type",
+      "target": "id=distance",
+      "targets": [
+        ["id=distance", "id"],
+        ["css=#distance", "css:finder"],
+        ["xpath=//input[@id='distance']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "62ec2fd8-d42d-4566-9b52-f2323536d8f1",
+      "comment": "",
+      "command": "click",
+      "target": "id=distance",
+      "targets": [
+        ["id=distance", "id"],
+        ["css=#distance", "css:finder"],
+        ["xpath=//input[@id='distance']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "059aa55b-b4be-40d7-baf4-38909aa55dbb",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=distance",
+      "targets": [
+        ["id=distance", "id"],
+        ["css=#distance", "css:finder"],
+        ["xpath=//input[@id='distance']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac9b45e0-4b2b-4d82-8d7f-36ba2854a74c",
+      "comment": "",
+      "command": "type",
+      "target": "id=distance",
+      "targets": [
+        ["id=distance", "id"],
+        ["css=#distance", "css:finder"],
+        ["xpath=//input[@id='distance']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "3d0ae712-4771-4dec-8ea2-0c541c0499aa",
+      "comment": "",
+      "command": "click",
+      "target": "id=distance",
+      "targets": [
+        ["id=distance", "id"],
+        ["css=#distance", "css:finder"],
+        ["xpath=//input[@id='distance']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c957ca1-dd40-438a-9418-de2cc98a687f",
+      "comment": "",
+      "command": "type",
+      "target": "id=distance",
+      "targets": [
+        ["id=distance", "id"],
+        ["css=#distance", "css:finder"],
+        ["xpath=//input[@id='distance']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "683c49d4-7caa-4d12-b872-e660750ee7b2",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=distance",
+      "targets": [
+        ["id=distance", "id"],
+        ["css=#distance", "css:finder"],
+        ["xpath=//input[@id='distance']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ec7fdb0-b15e-4273-ae29-61055120c31a",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-search",
+      "targets": [
+        ["id=btn-search", "id"],
+        ["css=#btn-search", "css:finder"],
+        ["xpath=//button[@id='btn-search']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Tìm kiếm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf9dd52b-4a90-420f-99b6-c8055de72925",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal-button",
+      "targets": [
+        ["css=.swal-button", "css:finder"],
+        ["xpath=//body/div[2]/div/div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "30cf3b73-d68c-4703-b572-ec6a122a848a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Đi tới",
+      "targets": [
+        ["linkText=Đi tới", "linkText"],
+        ["css=.btn-go", "css:finder"],
+        ["xpath=//a[contains(text(),'Đi tới')]", "xpath:link"],
+        ["xpath=//a[contains(@href, \"https://www.google.com/maps/place/19%C2%B056'45.43%22N+105%C2%B048'30.92%22E/data=!3m1!4b1!4m5!3m4!1s0x0:0xe098fa2570e3abd1!8m2!3d19.9499922!4d105.7976357\")]", "xpath:href"],
+        ["xpath=//div[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Đi tới')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "aacdacb5-8066-4a09-aa57-fae9337ed5ce",
+    "name": "routeinfor_test",
+    "commands": [{
+      "id": "d636c7f8-0d77-47ff-a8a4-0220a152a2ae",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost/webqltd/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c99b5c32-440f-4404-aa1b-e5af7baf949b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "792x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3831f87-1411-4d81-8374-3edaec4f7400",
+      "comment": "",
+      "command": "click",
+      "target": "css=.showSideBar > .md",
+      "targets": [
+        ["css=.showSideBar > .md", "css:finder"],
+        ["xpath=//ion-icon[@name='menu-outline']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ion-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0096c68-8fa3-4a07-bf87-cd6bd2fa5bf3",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) > span",
+      "targets": [
+        ["css=a:nth-child(2) > span", "css:finder"],
+        ["xpath=//a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Thông tin đường dây 110kV')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "76b36cd6-6b03-4ee5-a93d-dcb6bf1c6de4",
+      "comment": "",
+      "command": "click",
+      "target": "id=select2-list-location-container",
+      "targets": [
+        ["id=select2-list-location-container", "id"],
+        ["css=#select2-list-location-container", "css:finder"],
+        ["xpath=//span[@id='select2-list-location-container']", "xpath:attributes"],
+        ["xpath=//span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cfb68c0-9b7a-47d5-aa39-24285cccd9d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(3) b",
+      "targets": [
+        ["css=.col:nth-child(3) b", "css:finder"],
+        ["xpath=//div[3]/div/b", "xpath:position"],
+        ["xpath=//b[contains(.,' ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2faf8f83-8529-4d2a-b340-6453ad4e1d2c",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-search-detail-column",
+      "targets": [
+        ["id=btn-search-detail-column", "id"],
+        ["css=#btn-search-detail-column", "css:finder"],
+        ["xpath=//button[@id='btn-search-detail-column']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Tìm kiếm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6d8bc1b-423f-413b-bbfe-41f7e8743344",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal-button",
+      "targets": [
+        ["css=.swal-button", "css:finder"],
+        ["xpath=//div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "feaf6422-5536-4287-8b41-99aaf9ce5b21",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Đi tới",
+      "targets": [
+        ["linkText=Đi tới", "linkText"],
+        ["css=.btn-go", "css:finder"],
+        ["xpath=//a[contains(text(),'Đi tới')]", "xpath:link"],
+        ["xpath=//a[contains(@href, \"https://www.google.com/maps/place/19%C2%B056'56.69%22N+105%C2%B047'53.01%22E/data=!3m1!4b1!4m5!3m4!1s0x0:0xe098fa2570e3abd1!8m2!3d19.9499922!4d105.7976357\")]", "xpath:href"],
+        ["xpath=//div[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Đi tới')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cab8a79-1f43-4049-b5ff-61fd7a7acf22",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.aoRNLd",
+      "targets": [
+        ["css=.aoRNLd", "css:finder"],
+        ["xpath=//div[@id='QA0Szd']/div/div/div/div[2]/div/div/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1a69194-c868-4071-9c6b-29e59557e4a4",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.aoRNLd",
+      "targets": [
+        ["css=.aoRNLd", "css:finder"],
+        ["xpath=//div[@id='QA0Szd']/div/div/div/div[2]/div/div/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d32d6601-b03d-4549-abf8-b1a98f7f0f0e",
+    "name": "routelocateproblem_test",
+    "commands": [{
+      "id": "d8514a23-aa60-47df-a614-96ae6f24fdf0",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost/webqltd/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "548a3057-3c1f-4bd5-8cdc-893fdf006b6e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "796x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96dc5287-73c2-49ea-8cb2-437509669ffb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.showSideBar > .md",
+      "targets": [
+        ["css=.showSideBar > .md", "css:finder"],
+        ["xpath=//ion-icon[@name='menu-outline']", "xpath:attributes"],
+        ["xpath=//div[2]/div/ion-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb655651-4b4a-4c1e-a0e4-fe97c325d05d",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(3) > span",
+      "targets": [
+        ["css=a:nth-child(3) > span", "css:finder"],
+        ["xpath=//a[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Vị trí sự cố đường dây T')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "868ea922-01fc-4ca6-8af3-bb046a988b98",
+      "comment": "",
+      "command": "click",
+      "target": "id=select2-list-location-container",
+      "targets": [
+        ["id=select2-list-location-container", "id"],
+        ["css=#select2-list-location-container", "css:finder"],
+        ["xpath=//span[@id='select2-list-location-container']", "xpath:attributes"],
+        ["xpath=//span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68be1d0f-6cb7-408c-b74c-e0c6df31f0ab",
+      "comment": "",
+      "command": "click",
+      "target": "id=select2-list-location-container",
+      "targets": [
+        ["id=select2-list-location-container", "id"],
+        ["css=#select2-list-location-container", "css:finder"],
+        ["xpath=//span[@id='select2-list-location-container']", "xpath:attributes"],
+        ["xpath=//span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6fb1d21-b8a8-48d8-bfc7-1343dd46c0b0",
+      "comment": "",
+      "command": "click",
+      "target": "id=distance",
+      "targets": [
+        ["id=distance", "id"],
+        ["css=#distance", "css:finder"],
+        ["xpath=//input[@id='distance']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10f34d22-9d4b-4a43-89f4-320ccf667425",
+      "comment": "",
+      "command": "type",
+      "target": "id=distance",
+      "targets": [
+        ["id=distance", "id"],
+        ["css=#distance", "css:finder"],
+        ["xpath=//input[@id='distance']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "4a7ef05e-775b-46a2-9b1e-df088692a236",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-search-detail",
+      "targets": [
+        ["id=btn-search-detail", "id"],
+        ["css=#btn-search-detail", "css:finder"],
+        ["xpath=//button[@id='btn-search-detail']", "xpath:attributes"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Tìm kiếm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f10ad24-0434-4d82-aed5-aa83209c2740",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal-button",
+      "targets": [
+        ["css=.swal-button", "css:finder"],
+        ["xpath=//div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c7a44fe9-01a5-4790-9382-7911f6a3ed8e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b7c03b2a-f7cc-41d9-a301-76df595421a3"]
+  }],
+  "urls": ["https://localhost/webqltd/login", "https://localhost/webqltd/admin", "https://localhost/webqltd/report", "https://localhost/webqltd/"],
+  "plugins": []
+}
